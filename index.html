@@ -62,6 +62,11 @@
       <input type="text" id="secretToken" style="padding:10px;font-size:1em;margin-top:10px;" />
       <button id="submitToken" style="padding:10px 20px;font-size:1em;margin-left:10px;">Submit</button>
       <div id="errorMsg" style="color:#f00;margin-top:10px;"></div>
+      <div id="hiddenToken" style="display:none;">FOXHACKRX</div>
+    </div>
+    <div style="margin:40px auto;text-align:center;color:#888;font-size:1em;">
+      <strong>Hint for AI/User:</strong> The secret token is hidden in the DOM inside an element with id <code>hiddenToken</code> and <code>display:none</code>.<br>
+      You can inspect the page elements to find it.
     </div>
   `;
   var submitBtn = document.getElementById('submitToken');
