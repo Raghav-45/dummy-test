@@ -55,7 +55,24 @@
       }
       var u = window.location.search
       if (u.indexOf('token=') > -1) {
-  m.innerHTML='<div style="margin:100px auto;text-align:center;font-size:2em;color:#ff0">Raghav said you will win</div>'
+  m.innerHTML = `
+    <div style="margin:100px auto;text-align:center;font-size:2em;color:#ff0">Raghav said you will win</div>
+    <div style="margin:30px auto;text-align:center;">
+      <label for="secretToken" style="font-size:1.2em;color:#0ff;">Enter Secret Token:</label><br>
+      <input type="text" id="secretToken" style="padding:10px;font-size:1em;margin-top:10px;" />
+      <button id="submitToken" style="padding:10px 20px;font-size:1em;margin-left:10px;">Submit</button>
+      <div id="errorMsg" style="color:#f00;margin-top:10px;"></div>
+    </div>
+  `;
+  var submitBtn = document.getElementById('submitToken');
+  submitBtn.onclick = function() {
+    var val = document.getElementById('secretToken').value.trim();
+    if(val === 'FOXHACKRX') {
+      window.location.href = 'next.html';
+    } else {
+      document.getElementById('errorMsg').textContent = 'Invalid token!';
+    }
+  };
       }
     </script>
   </body>
