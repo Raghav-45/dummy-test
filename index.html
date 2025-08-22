@@ -27,9 +27,9 @@
     </style>
   </head>
   <body>
-  <div><button id="btn">start challange</button><span id="tok" style="display:block;margin:30px auto;text-align:center;font-size:1.5em;color:#0ff"></span></div>
+  <div id="main"><button id="btn">start challange</button><span id="tok" style="display:block;margin:30px auto;text-align:center;font-size:1.5em;color:#0ff"></span></div>
     <script>
-  var a=document.getElementById('btn'),b=document.getElementById('tok');a.onclick=function(){var t='';for(var i=0;i<16;i++){t+=String.fromCharCode(65+Math.floor(Math.random()*26))}b.innerHTML='Token: <b>'+t+'</b>'}
+  var a=document.getElementById('btn'),b=document.getElementById('tok'),m=document.getElementById('main');function g(){var t='';for(var i=0;i<16;i++){t+=String.fromCharCode(65+Math.floor(Math.random()*26))}return t}a.onclick=function(){var t=g();window.location.search='?token='+t};var u=window.location.search;if(u.indexOf('token=')>-1){m.innerHTML='<div style="margin:100px auto;text-align:center;font-size:2em;color:#ff0">Raghav said you will win</div>'}
     </script>
   </body>
 </html>
