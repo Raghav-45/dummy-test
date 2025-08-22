@@ -1,22 +1,21 @@
-<html></html>
-  <head>
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        background: #222;
-        color: #fff;
-        font-family: sans-serif;
-      }
-      .center {
-        margin: 100px auto;
-        text-align: center;
-        font-size: 2em;
-        color: #ff0;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="center">Challenge: THUNDERFORMS</div>
-  </body>
-</html>
+<html lang="en"><head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Challenge Hub</title>
+       <style>
+         :root{--bg: #0f172a;--card: #111827;--muted: #94a3b8;--text: #e5e7eb;--primary: #2563eb;--success: #16a34a;--danger: #dc2626;--warn: #f59e0b}*{box-sizing:border-box}html,body,#root{height:100%}body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,Apple Color Emoji,Segoe UI Emoji;background:var(--bg);color:var(--text)}.container{max-width:960px;margin:32px auto;padding:24px;background:var(--card);border-radius:16px;box-shadow:0 10px 30px #00000040}.row{display:flex;gap:16px;align-items:center;flex-wrap:wrap}.space{height:16px}.title{font-weight:800;font-size:28px;margin:0 0 8px}.subtitle{color:var(--muted);margin:0 0 16px}.btn{background:#1f2937;color:#fff;border:1px solid #374151;padding:10px 16px;border-radius:10px;cursor:pointer;transition:transform .06s ease,background .2s ease,border-color .2s ease}.btn:hover{transform:translateY(-1px);background:#111827;border-color:#4b5563}.btn.primary{background:var(--primary);border-color:transparent}.btn.success{background:var(--success);border-color:transparent}.btn.warn{background:var(--warn);border-color:transparent;color:#0b1220}.btn.danger{background:var(--danger);border-color:transparent}.grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.grid-4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}.card{background:#0b1220;border:1px solid #1f2937;border-radius:12px;padding:16px}.pill{padding:4px 10px;border-radius:999px;background:#0b1220;border:1px solid #1f2937;color:var(--muted);font-size:12px}.kbd{background:#0b1220;padding:2px 6px;border-radius:6px;border:1px solid #1f2937}.center{text-align:center}.pad-grid{display:grid;grid-template-columns:repeat(2,100px);gap:16px;place-content:center;margin:16px auto}.pad{width:100px;height:100px;border-radius:14px;display:grid;place-items:center;color:#0b1220;font-weight:800;letter-spacing:.03em;cursor:pointer;border:2px solid transparent;-webkit-user-select:none;user-select:none}.pad.red{background:#f87171}.pad.blue{background:#60a5fa}.pad.green{background:#86efac}.pad.yellow{background:#fde68a}.pad.glow{box-shadow:0 0 0 3px #fff9 inset,0 10px 25px #00000040;transform:scale(1.03)}.inline-badges{display:flex;gap:8px;align-items:center}.muted{color:var(--muted)}.input{width:100%;padding:10px 12px;border-radius:10px;background:#0b1220;border:1px solid #1f2937;color:#fff}.code-box{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;background:#0b1220;border:1px dashed #334155;padding:10px 14px;border-radius:10px;display:inline-block}
+
+       </style></head>
+                         
+      <body>
+        <div id="root"><div class="container"><div class="row" style="justify-content: space-between;"><div><h1 class="title">Challenge Hub</h1><p class="subtitle">No routes. Everything in state. Click Start Challenge to get a random task.</p></div><div class="inline-badges"><span class="pill"> HackRx </span><span class="pill">No Routing</span><span class="pill">4 challenges</span></div></div><div class="space"></div><div class="card"><div class="row" style="justify-content: space-between;"><div><h3 style="margin: 0px;">Challenge: Hidden Element</h3><div class="muted" style="font-size: 0.9em; margin-top: 4px;">ID: hidden</div></div><button class="btn">Exit</button></div><div class="space"></div><div><p class="muted">Find the invisible text hidden in the DOM. Hint: inspect elements or search for elements with <span class="kbd">data-secret</span>.</p><input class="input" placeholder="Enter the hidden text" value=""><div class="space"></div><div class="row" style="justify-content: space-between;"><div class="muted">Attempts: 0</div><button class="btn success">Submit</button></div></div></div></div><div class="space"></div>
+<div class="center"><h2 style="color:var(--primary);font-size:2em;">THUNDERFORMS</h2></div></div>
+        
+
+       <script>
+        const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb29sR3V5IjoiUklURVNIIiwiY2hhbGxlbmdlSUQiOiJoaWRkZW4iLCJ1c2VySWQiOiJ1c2VyX3JpdGVzaCIsImVtYWlsIjoicml0ZXNoQGJhamFqZmluc2VydmhlYWx0aC5pbiIsInJvbGUiOiJjb29sX2d1eSIsImlhdCI6MTc1NTg1ODI4MiwiZXhwIjoxNzU1OTQ0NjgyfQ.";
+        sessionStorage.setItem("challenge-key", token);
+       </script>
+               <script>
+         (function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const l of document.querySelectorAll('link[rel="modulepreload"]'))r(l);new MutationObserver(l=>{for(const u of l)if(u.type==="childList")for(const i of u.addedNodes)i.tagName==="LINK"&&i.rel==="modulepreload"&&r(i)}).observe(document,{childList:!0,subtree:!0});function n(l){const u={};return l.integrity&&(u.integrity=l.integrity),l.referrerPolicy&&(u.referrerPolicy=l.referrerPolicy),l.crossOrigin==="use-credentials"?u.credentials="include":l.crossOrigin==="anonymous"?u.credentials="omit":u.credentials="same-origin",u}function r(l){if(l.ep)return;l.ep=!0;const u=n(l);fetch(l.href,u)}})();function lc(e){return e&&e.__esModule&&Object.prototype.hasOwnProperty.call(e,"default")?e.default:e}var Wo={exports:{}},el={},Qo={exports:{}},j={};/* ...existing code... */
+<div data-secret="true" style="position: absolute; left: -99999px; top: -99999px;">alpha</div></body></html>
