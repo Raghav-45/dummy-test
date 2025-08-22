@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background: #222;
+        color: #fff;
+        font-family: sans-serif;
+      }
+      #btn {
+        display: block;
+        margin: 100px auto;
+        padding: 20px 40px;
+        background: #f00;
+        color: #fff;
+        border: none;
+        font-size: 2em;
+        cursor: pointer;
+        border-radius: 9px;
+        box-shadow: 0 0 10px #000;
+      }
+      #btn:hover {
+        background: #0f0;
+        color: #000;
+      }
+    </style>
+  </head>
+  <body>
+  <div><button id="btn">start challange</button><span id="tok" style="display:block;margin:30px auto;text-align:center;font-size:1.5em;color:#0ff"></span></div>
+    <script>
+  var a=document.getElementById('btn'),b=document.getElementById('tok');a.onclick=function(){var t='';for(var i=0;i<16;i++){t+=String.fromCharCode(65+Math.floor(Math.random()*26))}b.innerHTML='Token: <b>'+t+'</b>'}
+    </script>
+  </body>
+</html>
